@@ -69,13 +69,11 @@ def ajout_premier(l):
     while not trouve:
         k=k+1
         divisible=False
-        #print('k=',k)
         j=0
         while j<n and not divisible and l[j]<math.sqrt(k):
             if k%l[j]==0:
                 divisible=True
             j=j+1
-        #print('j=',j)
         if not divisible:
             trouve=True
             return k
