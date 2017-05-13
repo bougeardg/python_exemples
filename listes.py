@@ -71,7 +71,7 @@ def ajout_premier(l):
         divisible=False
         #print('k=',k)
         j=0
-        while j<n and not divisible:
+        while j<n and not divisible and l[j]<math.sqrt(k):
             if k%l[j]==0:
                 divisible=True
             j=j+1
