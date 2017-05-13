@@ -25,3 +25,26 @@ print(g(3))
 
 from fonctions_annexe import fact
 print("6!=",fact(6))
+
+
+# effets des fonctions/procedures sur les variables extérieures
+
+a=2
+print('avant ajou, a=', a)
+def ajou(a):
+    a=a+2
+    print('pendant ajou, a=',a)
+
+ajou(a) # l'appel à ajou plante car $a$ n'est pas définie dans ajou
+print('après ajou, a=',a)
+#a n'est pas modifié par la procedure/fonction car elle est définie à l'extérieure
+
+def ajou_bis():
+    global a #la déclaration de a comme globale permet à la procedure/fonction
+    #d'en modifier la valeur à l'extérieur de la procedure
+    a=a+2
+    print('pendant ajou_bis, a=',a)
+
+ajou_bis()
+print('après ajou_bis, a=',a)
+#les objets ne sont pas ceoncerné par ce pb, ils sont modifié par les procédures/fonctions
