@@ -59,7 +59,6 @@ aff_liste(l1)
 
 
 
-print("liste de nombres premiers")
 liste_premiers=[2,3,5,7]
 
 #Fonction qui trouve le nombre premier dans la suite de la liste
@@ -83,7 +82,8 @@ def ajout_premier(l):
 
 for i in range(0,5):
     liste_premiers.append(ajout_premier(liste_premiers))
-    
+print("liste de nombres premiers")
+
 aff_liste(liste_premiers)
 
 
