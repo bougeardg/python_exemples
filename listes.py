@@ -46,7 +46,7 @@ l1.remove(7)
 n=5
 print("test",n)
 aff_liste(l1)
-#et sil y a 2 fois le même seul le premier rencontré est supprimé
+#et s'il y a 2 fois le même, seul le premier rencontré est supprimé
 l1.insert(3,6)
 l1.insert(5,6)
 n=6
