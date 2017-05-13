@@ -103,4 +103,5 @@ liste_premiers=liste_recupere
 #Ajout de 5 nombres premiers
 for i in range(0,5):
     liste_premiers.append(ajout_premier(liste_premiers))
+print("la nouvelle liste")
 aff_liste(liste_premiers)
