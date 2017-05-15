@@ -4,10 +4,7 @@ l=list()
 n=200
 for i in range(n):
     l.append(i)
-
-print(l)
 l=random.sample(l,len(l))
-print(l)
 
 def tri(li):
     if len(li)==0:
