@@ -5,7 +5,8 @@ str2=""
 
 
 print(str1)
-
+#longueur d'une chaine 
+print(len(str1))
 #mettre en majuscule (la modification n'est pas enregistrée)
 print(str1.upper())
 print(str1)
