@@ -2,6 +2,7 @@
 print('5+7=',5+7)
 print('5*7=',5*7)
 print('5/7=',5/7)
+print('7//5=',7//5)# quotient de division entière
 print('7%5=',7%5)#reste de 7 module 5
 print('-7%5=',-7%5)
 print('5^4=', pow(5,4))

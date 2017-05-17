@@ -1,9 +1,6 @@
 # -$- coding:Utf-8 -*
 from tkinter import *
 
-
-
-
 def couleur(r,g,b):
     #conversion en hexadécimal puis on enlève les deux premiers caractères "0x"
     r=hex(r)[2:]
@@ -37,7 +34,8 @@ for i in range(0,500):
     zone_dessin.create_line(i,0,i,499,fill=strcol,width=1)
    # print(int((i/500.)*255.))
 
-zone_dessin.grid()
-
+zone_dessin.pack()
+bouton=Button(fenetre, text="Fermer", command=fenetre.quit)
+bouton.pack()
 # lancement de la boucle tkinter
 fenetre.mainloop()
