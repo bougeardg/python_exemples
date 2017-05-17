@@ -31,8 +31,9 @@ def l_prem(k):
 
 
 reponse=input("Est-ce la première utilisation du programme ? (oui/non)")
-if reponse.lower()=="oui":
-    with open('liste_premiers','wb') as fichier:
+if reponse.lower()=="oui":"""initialisation du programm en créant
+    une première liste des nombres premiers inférieurs à 10"""
+    with open('liste_premiers','wb') as fichier:#Enregistrement dans un fichier
         liste_premiers=pickle.Pickler(fichier)
         liste_premiers.dump(l_prem(10))
 
