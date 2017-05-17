@@ -7,20 +7,23 @@ def aff(l):
 
 
 
-def est_premier(n):
+
+
+def est_premier(n,l):
     test=True
-    #print("n=",n)
-    for i in range(2,int(math.sqrt(n+1)+1)):
+    i=0
+    while l[i]<math.sqrt(n)and i<len(l):
         #print("i=",i)
-        if n%i==0:
+        if n%l[i]==0:
             test=False
+        i=i+1
     return test
-        
+               
 
 def l_prem(k):
     l=[]
     for i in range(2,k):
-        if est_premier(i):
+        if est_premier(i,[2,3]):
             l.append(i)
     return l
 
@@ -56,7 +59,7 @@ while test:
     cpt=0
     while cpt<k:
         i=l_r[len(l_r)-1]+1
-        while not est_premier(i):
+        while not est_premier(i,l_r):
             i=i+1
         l_r.append(i)
         cpt=cpt+1
