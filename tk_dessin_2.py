@@ -2,6 +2,8 @@
 from tkinter import *
 
 
+
+
 def couleur(r,g,b):
     #conversion en hexadécimal puis on enlève les deux premiers caractères "0x"
     r=hex(r)[2:]
